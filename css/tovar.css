@@ -1,0 +1,83 @@
+.tovar_zaglav{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.tovar__item{
+    display: flex;
+    gap: 30px;
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tovar_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tovar_img>div{
+    width: 200px;
+    height: 100px;
+}
+
+.tovar_img>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tovar_info_zaglav{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tovar_info_code, .tovar_info_text{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.tovar_info_code{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tovar_price_text{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.tovar_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.tovar_img, .tovar_price{
+    flex: 1;
+}
+
+.tovar_info{
+    flex: 4;
+}
+
+@media(max-width:1000px){
+    .tovar__item{
+        flex-direction: column;
+    }   
+    .tovar_info{
+        text-align: center;
+    }
+
+    .tovar_img>div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

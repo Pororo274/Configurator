@@ -1,0 +1,73 @@
+.user_list_zaglav{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.user_list_form{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/*--------------------- table */
+.user_list_tr{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.glav_tr{
+    border-bottom: 1px solid #6F58C9;
+    padding: 30px;
+}
+
+.user_list_table{
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 10px;
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.user_list_tr{
+    padding: 30px;
+}
+
+.user_list_table>tbody>tr>th, .user_list_table>tbody>tr>td{
+    padding: 30px;
+}
+
+.overflow{
+    overflow-x: auto;
+}
+
+.user_list_table>tbody>tr>td{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.user_list_table>tbody>tr>th{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width:970px){
+    .user_list_table>tbody>tr>th, .user_list_table>tbody>tr>td{
+        padding: 20px;
+    }
+
+    .user_list_table>tbody>tr>td{
+        font-size: 16px;
+    }
+    
+    .user_list_table>tbody>tr>th{
+        font-size: 16px;
+    }
+}

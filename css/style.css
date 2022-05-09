@@ -1,0 +1,1717 @@
+/* Подключение шрифтов */
+
+@font-face {
+
+    font-family: "Montserrat";
+
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+
+}
+
+
+
+/* Указываем box sizing */
+
+*, *::before, *::after {
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Убираем внутренние отступы */
+
+ul, ol {
+
+    padding: 0;
+
+}
+
+
+
+/* Убираем внешние отступы */
+
+body,
+
+h1, h2, h3, h4, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+
+    margin: 0;
+
+}
+
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+
+    min-height: 100vh;
+
+    scroll-behavior: smooth;
+
+    text-rendering: optimizeSpeed;
+
+    line-height: 120%;
+
+    font-family: "Montserrat";
+
+    font-weight: normal;
+
+    color: #fff;
+
+    font-size: 18px;
+    background: #181231;
+
+}
+
+button{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Удаляем стандартную стилизацию для всех li*/
+
+li {
+
+    list-style: none;
+
+}
+
+
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+}
+
+
+
+/* Упрощаем работу с изображениями */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+
+/* Указываем понятную периодичность в потоке данных у article*/
+
+article > * + * {
+
+    margin-top: 1em;
+
+}
+
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+
+button,
+
+textarea,
+
+select {
+
+    font: inherit;
+
+}
+
+
+
+p {
+
+    letter-spacing: 0.015em;
+
+}
+
+
+
+/* Стилизация блока header */
+
+
+
+.header {
+
+    background: linear-gradient(98.48deg, #161421 0.29%, #181136 100%), #161421;
+
+}
+
+
+
+.container {
+
+    max-width: 1190px;
+
+    padding: 0px 20px;
+
+    margin: auto;
+
+}
+
+
+
+.header__container {
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.header__navigation, .footer__navigation  {
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+}
+
+
+
+.header__logo, .footer__logo  {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    font-size: 24px;
+
+}
+
+
+
+.logo__figure {
+
+    width: 40px;
+
+    height: 40px;
+
+    background: rgba(111, 88, 201, 0.1);
+
+    border: 1px solid #6F58C9;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.logo__text {
+
+    margin-left: 10px;
+
+}
+
+
+
+.header__menu, .footer__menu {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-left: 120px;
+
+    gap: 40px;
+
+    font-size: 16px;
+
+}
+
+
+
+.header__buttons, .footer__buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+
+.button {
+
+    background: rgba(111, 88, 201, 0.1);
+
+    border: 1px solid #6F58C9;
+
+    border-radius: 30px;
+
+    padding: 12px 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    line-height: 16px;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+}
+
+
+
+/* hover эффекты блока header */
+
+
+
+.header__link::after, .hover__link::after {
+
+    content: "";
+
+    display: block;
+
+    width: 0px;
+
+    height: 2px;
+
+    background: #6F58C9;
+
+    transition: width .3s ease-in;
+
+}
+
+
+
+.header__link:hover::after, .hover__link:hover::after {
+
+    width: 100%;
+
+    transition: width .3s ease-out;
+
+}
+
+
+
+.button, .logo__figure {
+
+    transition: box-shadow 300ms ease-in-out;
+
+}
+
+
+
+.button:hover {
+
+    box-shadow: 0px 0px 0px 50px #6F58C9 inset;
+
+}
+
+
+
+.header__logo:hover .logo__figure, .footer__logo:hover .logo__figure {
+
+    box-shadow: 0px 0px 0px 50px #6F58C9 inset;
+
+}
+
+
+
+.header__nav {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+/* Стилизация блока start */
+
+
+
+.start__block {
+
+    background: linear-gradient(98.48deg, #161421 0.29%, #181136 100%), #161421;
+
+}
+
+
+
+.start__container {
+
+    padding: 70px 20px;
+
+}
+
+
+
+.start__row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.start__title {
+
+    font-weight: 700;
+
+    font-size: 48px;
+
+    line-height: 120%;
+
+}
+
+
+
+.start__content {
+
+    width: 570px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+
+.start__text {
+
+    margin-top: 30px;
+
+    font-weight: 400;
+
+    font-size: 18px;
+
+}
+
+
+
+.start__button {
+    margin-top: 40px;
+
+}
+
+
+
+.start__contacts {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 100px;
+
+}
+
+
+
+.start__email {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+
+.email__icon {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+.start__social {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+
+.start__img {
+
+    overflow: hidden;
+
+}
+
+
+
+.start__img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+
+/* hover эффекты блока start */
+
+
+
+.start__email:hover .email__icon svg path {
+
+    fill: #6F58C9;
+
+    transition: .3s ease-in;
+
+}
+
+
+
+.start__email:not(:hover) .email__icon svg path {
+
+    transition: .3s ease-out;
+
+}
+
+
+
+.social__item:hover svg path {
+
+    fill: #6F58C9;
+
+    transition: .3s ease-in;
+
+}
+
+
+
+.social__item:not(:hover) svg path {
+
+    transition: .3s ease-out;
+
+}
+
+
+
+/* Стилизация блока benefits */
+
+
+
+.benefits__block {
+
+    background-color: #161421;
+
+}
+
+
+
+.benefits__container {
+
+    padding: 70px 20px;
+
+}
+
+
+
+.title {
+
+    font-weight: 500;
+
+    font-size: 36px;
+
+}
+
+
+
+.list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+.benefits__list {
+
+    margin-top: 50px;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    gap: 40px;
+
+}
+
+
+
+.benefits__item {
+
+    background: rgba(111, 88, 201, 0.1);
+
+    border: 1px solid #6F58C9;
+
+    border-radius: 20px;
+
+    padding: 61px 26px;
+
+    width: 283px;
+
+    height: 351px;
+
+}
+
+
+
+.benefits__name {
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+    line-height: 120%;
+
+    margin-top: 30px;
+
+}
+
+
+
+.benefits__text {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    line-height: 120%;
+
+}
+
+
+/* Стилизация блока configurator */
+
+
+
+.configurator__block {
+
+    background-color: #161421;
+
+}
+
+
+
+.configurator__container {
+
+    padding: 70px 20px;
+
+}
+
+
+
+.configurator__subtitle {
+
+    margin-top: 30px;
+
+    font-size: 16px;
+
+    width: 862px;
+
+}
+
+
+
+.configurator__list {
+
+    margin-top: 45px;
+
+    gap: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+}
+
+
+
+.list__type1 {
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    gap: 30px;
+
+}
+
+
+
+.list__type2 {
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    gap: 30px;
+
+}
+
+
+
+.configurator__item {
+
+    background: rgba(111, 88, 201, 0.1);
+
+    border: 1px solid #6F58C9;
+
+    border-radius: 10px;
+
+    width: 150px;
+
+    height: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 16px;
+
+}
+
+
+
+.configurator__name {
+
+    margin-top: 15px;
+
+}
+
+
+
+.change__width {
+
+    width: 220px;
+
+}
+
+
+
+.configurator__control {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 60px;
+
+}
+
+
+
+.configurator__text {
+
+    font-weight: 500;
+
+    font-size: 18px;
+
+}
+
+
+
+.configurator__value {
+
+    font-weight: 500;
+
+    font-size: 36px;
+
+    margin-top: 20px;
+
+}
+
+
+
+.configurator__value {
+
+    margin-top: 20px;
+
+}
+
+
+
+/* Анимация блока configurator */
+
+
+
+.configurator__item {
+
+    transition: box-shadow 300ms ease-in-out;
+
+}
+
+
+
+.configurator__item:hover {
+
+    box-shadow: 0px 0px 0px 250px #6F58C9 inset;
+
+}
+
+
+
+/* Стилизация блока footer */
+
+
+
+.footer {
+
+    background: linear-gradient(104.72deg, #161421 0.47%, #181136 44.6%), #161421;
+
+}
+
+
+
+.footer__container {
+
+    padding: 50px 20px;
+
+}
+
+
+
+.footer__row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.footer__contacts {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 50px;
+
+}
+
+
+
+/* Адаптив главной страницы */
+
+
+
+@media (max-width: 1190px) {
+
+    .header__menu {
+
+        margin-left: 60px;
+
+    }
+
+    .footer__menu  {
+
+        margin-left: 60px;
+
+    }
+
+}
+
+
+
+@media (max-width: 1050px) {
+
+    .header__menu {
+
+        margin-left: 40px;
+
+        gap: 20px;
+
+    }
+
+    .footer__menu  {
+
+        margin-left: 40px;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+
+/* Бургер меню */
+
+
+
+.burger__menu {
+
+    display: none;
+
+    visibility: hidden;
+
+}
+
+
+
+/* скрываем чекбокс */
+
+#menu__toggle {
+
+    display: none;
+
+    opacity: 0;
+
+}
+
+
+
+.header__burger {
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+
+
+
+.burger__menu {
+
+    position: absolute;
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .header__nav {
+
+        display: none;
+
+    }
+
+
+
+    .header__buttons {
+
+        display: none;
+
+    }
+
+    /* стилизуем кнопку */
+
+    .menu__btn {
+
+        display: flex; /* используем flex для центрирования содержимого */
+
+        align-items: center;  /* центрируем содержимое кнопки */
+
+        top: 30px;
+
+        right: 20px;
+
+        width: 26px;
+
+        height: 26px;
+
+        cursor: pointer;
+
+        z-index: 2;
+
+    }
+
+    /* добавляем "гамбургер" */
+
+    .menu__btn > span,
+
+    .menu__btn > span::before,
+
+    .menu__btn > span::after {
+
+        display: block;
+
+        position: absolute;
+
+        width: 26px;
+
+        height: 2px;
+
+        background-color: #fff;
+
+    }
+
+    .menu__btn > span::before {
+
+        content: '';
+
+        top: -8px;
+
+    }
+
+    .menu__btn > span::after {
+
+        content: '';
+
+        top: 8px;
+
+    }
+
+
+
+    .burger__menu {
+
+        position: absolute;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-end;
+
+        text-align: right;
+
+        font-size: 16px;
+
+        gap: 35px;
+
+        top: 110px;
+
+    }
+
+
+
+    .burger__bg {
+
+        position: absolute;
+
+        right: 0;
+
+        top: 0;
+
+        height: 450px;
+
+        width: 300px;
+
+        background: linear-gradient(98.48deg, #161421 0.29%, #181136 100%), #161421;
+
+        visibility: hidden;
+
+        z-index: 1;
+
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+
+
+    #menu__toggle:checked ~ .menu__btn > span {
+
+        transform: rotate(45deg);
+
+    }
+
+
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+
+        top: 0;
+
+        transform: rotate(0);
+
+    }
+
+
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+
+        top: 0;
+
+        transform: rotate(90deg);
+
+    }
+
+    #menu__toggle:checked ~ .burger__menu {
+
+        visibility: visible;
+
+        z-index: 2;
+
+    }
+
+
+
+    #menu__toggle:checked ~ .burger__bg {
+
+        visibility: visible;
+
+        z-index: 1;
+
+    }
+
+
+
+    .menu__btn > span,
+
+    .menu__btn > span::before,
+
+    .menu__btn > span::after {
+
+    transition-duration: .25s;
+
+    }
+
+    .menu__box {
+
+    transition-duration: .25s;
+
+    }
+
+    .menu__item {
+
+    transition-duration: .25s;
+
+    }
+
+
+
+    .start__title {
+
+        font-size: 36px;
+
+    }
+
+
+
+    .start__text {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .start__content {
+
+        width: 460px;
+
+    }
+
+
+
+    .start__row {
+
+        gap: 20px;
+
+    }
+
+
+
+    .start__email  {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .footer__menu  {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .footer__row {
+
+        flex-wrap: wrap;
+
+        gap: 30px;
+
+    }
+
+
+
+    .footer__navigation {
+
+        flex-wrap: wrap;
+
+    }
+
+
+
+    .configurator__subtitle  {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+@media (max-width: 948px) {
+
+    .footer__row {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .footer__contacts {
+
+        justify-content: center;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .start__img {
+
+        display: none;
+
+    }
+
+
+
+    .start__content {
+
+        align-items: center;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+
+    .benefits__title, .configurator__title, .configurator__subtitle {
+
+        text-align: center;
+
+    }
+
+
+
+    .benefits__list  {
+
+        justify-content: center;
+
+    }
+
+
+
+    .list__type1, .list__type2   {
+
+        justify-content: center;
+
+    }
+
+
+
+    .configurator__control {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+
+    }
+
+}
+
+
+
+@media (max-width: 638px) {
+
+    .footer__navigation {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+
+    }
+
+
+
+    .footer__menu  {
+
+        margin-left: 0px;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .benefits__title  {
+
+        font-size: 32px;
+
+        line-height: 120%;
+
+    }
+
+
+
+    .configurator__title  {
+
+        font-size: 32px;
+
+        line-height: 120%;
+
+    }
+
+
+
+    .footer__contacts {
+
+        flex-wrap: wrap;
+
+        gap: 30px;
+
+    }
+
+
+
+    .footer__menu  {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+    }
+
+
+
+    .burger__bg {
+
+        width: 100%;
+
+        height: 100vh;
+
+    }
+
+} 
+
+
+
+@media (max-width: 414px) {
+
+    .start__contacts {
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+/* index_config */
+
+.configuration_list{
+    margin-top: 50px;
+}
+
+.configuration__zaglav{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.configuration__text{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.config_img{
+    width: 124px;
+    height: 124px;
+}
+
+.config_img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.configuration_list__item{
+    padding: 20px;
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.configuration_list__main{
+    display: flex;
+}
+
+.configuration_list__info{
+    margin-left: 30px;
+    width: 976px;
+}
+
+.config_info__name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.config_info__code{
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-size: 400;
+}
+
+.config_info__about{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.config_replace{
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.configuration_list__price{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    justify-content: right;
+}
+
+.config_price{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.count{
+    display: flex;
+    align-items: center;
+}
+
+.count_number{
+    padding: 5px 10px;
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.count_text{
+    margin-right: 30px;
+}
+
+.count_multi{
+    margin-right: 35px;
+}
+
+@media(max-width:500px){
+    .configuration__zaglav, .configuration__text{
+        text-align: center;
+    }
+
+    .configuration_list__main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .config_info__about{
+        width: 100%;
+    }
+
+    .config_img{
+        text-align: center;
+    }
+
+    .configuration_list__info{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .config_img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .configuration_list__price{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.page_zaglav{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.label{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input{
+    width: 470px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    display: block;
+}
+
+.input_flex{
+    display: flex;
+}
+
+@media(max-width:530px){
+    .input{
+        width: 100%;
+    }
+}
+
+/* myConfig */
+.myConfig_flex{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.myConfig_main__item{
+    padding: 35px;
+    background: rgba(111, 88, 201, 0.1);
+    border: 1px solid #6F58C9;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.myConfig_info_head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.myConfig_info_text{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.myConfig_head_1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.myConfig_info_text, .myConfig_head_2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.span_myConfig{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.myConfig_img{
+    flex: 1;
+}
+
+.myConfig_info{
+    flex: 10;
+}
+
+.myConfig_img__item{
+    width: 85px;
+    height: 138px;
+}
+
+.myConfig_img__item>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.myConfig_main__end{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+}
+
+.myConfig_main_buttons{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.myConfig_main_user{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 40px;
+}
+
+@media(max-width:1000px){
+    .myConfig_main__end{
+        justify-content: center;
+    }
+
+    .myConfig_main_buttons{
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px){
+    .myConfig_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px){
+    .myConfig_zaglav{
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media(max-width:650px){
+    .myConfig_head_1{
+        margin-bottom: 10px;
+    }
+}
+
+.page_textZaglav{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.page_text{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media(max-width:450px){
+    .page_zaglav{
+        font-size: 30px;
+    }
+}
+
+.configurator__title_congifRedact{
+    margin-top: 100px;
+}
+

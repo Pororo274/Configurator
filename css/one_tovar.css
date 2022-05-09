@@ -1,0 +1,144 @@
+.one_tovar_zaglav{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.one_tovar_card{
+    display: flex;
+    gap: 30px;
+    border: 1px solid #6F58C9;
+    border-radius: 15px;
+}
+
+.one_tovar_button{
+    width: 146px;   
+}
+
+.line_tovar{
+    width: 1px;
+    background: #6F58C9;
+}
+
+.one_tovar_img, .one_tovar_info{
+    padding: 40px 0px;
+}
+
+.one_tovar_img{
+    padding-left: 40px;
+}
+
+.one_tovar_info{
+    padding-right: 40px;
+}
+
+.one_tovar_info_zaglav{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.one_tovar_code{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.one_tovar_price{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.one_tovar_zaglav1{
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.one_tovar_char{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 70px;
+}
+
+.one_tovar_char__item{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.char_name, .char_value{flex: 1;}
+
+.one_tovar_img>div{
+    width: 382px;
+    height: 192px;
+}
+
+.one_tovar_img>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:1000px){
+    .one_tovar_card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .one_tovar_button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .one_tovar_img>div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .line_tovar{
+        display: none;
+    }
+
+    .one_tovar_img{
+        padding-left: 0px;
+    }
+
+    .one_tovar_info{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .one_tovar_char__item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .char_value{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:450px){
+    .one_tovar_img>div{
+        width: 100%;
+        height: auto;
+    }
+
+    .one_tovar_img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .one_tovar_info_zaglav{
+        font-size: 20px;
+    }
+}
